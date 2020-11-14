@@ -1,0 +1,2 @@
+var u=require("react");exports.useObservable=function(n,e){void 0===e&&(e=null);var r=u.useState(n)[0],t=u.useState(function(){return function(u,n){void 0===n&&(n=null);var e=n;return r.subscribe(function(u){e=u}).unsubscribe(),e}(0,e)}),i=t[0],s=t[1];return u.useEffect(function(){var u=r.subscribe(function(u){s(u)});return function(){u.unsubscribe()}},[]),i};
+//# sourceMappingURL=useObservable.js.map

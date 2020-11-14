@@ -1,0 +1,2 @@
+import{useEffect as n,useState as r}from"react";function u(u,i){void 0===i&&(i=null);var t=r(u)[0],c=r(function(){return function(n,r){void 0===r&&(r=null);var u=r;return t.subscribe(function(n){u=n}).unsubscribe(),u}(0,i)}),o=c[0],e=c[1];return n(function(){var n=t.subscribe(function(n){e(n)});return function(){n.unsubscribe()}},[]),o}export{u as useObservable};
+//# sourceMappingURL=useObservable.mjs.map
